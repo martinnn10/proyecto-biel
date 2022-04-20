@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* logo */
+.barranavegacion__item--logo{
+    width: 100px;
+}
+/* header */
+.header__menu{
+    display: flex;
+    justify-items: end;
+}
+/* li */
+.header__menu li{
+    margin-right: 20px;
+    list-style: none;
+ 
+}
+/* ancor */
+.header__menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* header cuadricula */
+.header--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem;
+    background-color: rgb(223, 80, 80);
+    justify-items: center;
+    align-items: center;
+}
+.main--grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: repeat(4, 15rem);
+    gap: 1rem;
+    background-image: url(./galeria/fondoHome.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(53, 53, 53);
+    justify-items: center;
+}
+.footer--redesociales{
+    list-style: none; 
+}
+@media (max-width: 768px){
+        .header__menu{
+    
+            flex-direction: column;
+    
+        }
+    
+        .header--grid{
+    
+            grid-template-columns: 1fr;
+    
+            flex-direction: column;
+    
+        }
+    
+        .main--grid{
+    
+            grid-template-columns: 1fr;
+    
+        }
+    
+        .footer--grid{
+    
+            grid-template-columns: 1fr;
+    
+            grid-template-rows: 1fr 1fr 1fr;
+    
+        }
+    
+    }
+
+ 
+.productos{
+    width: 250px;
+}
+/* catalogo */
+.grid-main{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: repeat(4, 15rem);
+    gap: 1rem;
+}
+
+@media(max-width:768px){
+    .grid-main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 15rem);
+        gap: 1rem;
+
+
+    }
+}
