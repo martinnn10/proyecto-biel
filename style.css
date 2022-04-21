@@ -84,8 +84,19 @@
 
  
 .productos{
-    width: 250px;
+    width: 200px;
+    height: 200px;
+    padding: auto;
+  
 }
+.productos{
+    position: relative;
+    left: 20px;
+    transition: transform .2s; /* Animation */
+    }
+    .productos:hover {
+    transform: scale(1.7);
+    }
 /* catalogo */
 .grid-main{
     display: grid;
@@ -93,7 +104,9 @@
     grid-template-rows: repeat(4, 15rem);
     gap: 1rem;
 }
-
+.comprar-precio{
+    justify-self: center;
+}
 @media(max-width:768px){
     .grid-main{
         grid-template-columns: 1fr;
