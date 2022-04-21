@@ -97,6 +97,19 @@
     .productos:hover {
     transform: scale(1.7);
     }
+
+.boton{
+    width: 100px;
+    height: 30px;
+    border-radius: .5em;
+    background-color: red;
+    cursor: pointer;
+    transition:  background-color 1s ;
+}
+.boton:hover{
+    background-color: grey;
+}
+
 /* catalogo */
 .grid-main{
     display: grid;
