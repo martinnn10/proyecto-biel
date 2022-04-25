@@ -8,19 +8,21 @@ h1{
     background-color: beige;
     text-align: center;
     margin: 5px;
-}
-.fondo-selection{
-    background-image: url(./galeria/fondo-home-section.jpg);   
-}
+}  
+
 /* section */
 .section__inicio{
-    background-image: url(./galeria/fondo-home-section.jpg);
-    height: 50rem;
+    padding: 110px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 25px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: auto;
+    background-size: cover ;
+    background-image: url(./galeria/fondo-home-section.jpg);
 }
+
 
 
 
