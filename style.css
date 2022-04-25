@@ -50,10 +50,11 @@ figure{
     justify-content: center;
     align-items: center;
 }
-h2{
+.h2-footer{
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
+    text-align: center;
 }
 .red-social{
     display: flex;
