@@ -1,92 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
+/* index */
+
+.logo{
+    height: 100px;
 }
-/* logo */
-.barranavegacion__item--logo{
-    width: 100px;
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+    text-align: center;
+    margin: 5px;
 }
-/* header */
-.header__menu{
+.fondo-selection{
+    background-image: url(./galeria/fondo-home-section.jpg);   
+}
+/* section */
+.section__inicio{
+    background-image: url(./galeria/fondo-home-section.jpg);
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+figure{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-items: end;
-}
-/* li */
-.header__menu li{
-    margin-right: 20px;
-    list-style: none;
- 
-}
-/* ancor */
-.header__menu li a{
-    text-decoration: none;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/* header cuadricula */
-.header--grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 8rem;
-    background-color: rgb(223, 80, 80);
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
-.main--grid{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: repeat(4, 15rem);
-    gap: 1rem;
-    background-image: url(./galeria/fondoHome.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
+h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
-.footer-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgb(53, 53, 53);
-    justify-items: center;
+.red-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.footer--redesociales{
-    list-style: none; 
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: #0d2033;
+    transition: all 300ms ease;
 }
-@media (max-width: 768px){
-        .header__menu{
-    
-            flex-direction: column;
-    
-        }
-    
-        .header--grid{
-    
-            grid-template-columns: 1fr;
-    
-            flex-direction: column;
-    
-        }
-    
-        .main--grid{
-    
-            grid-template-columns: 1fr;
-    
-        }
-    
-        .footer--grid{
-    
-            grid-template-columns: 1fr;
-    
-            grid-template-rows: 1fr 1fr 1fr;
-    
-        }
-    
+.red-social a:hover{
+    color: aqua;
+}
+.grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
     }
+}
 
- 
+/*catalogo */
+
 .productos{
-    width: 200px;
-    height: 200px;
-    padding: auto;
+    width: 280px;
+    height: 280px;
+    padding: 20px;
   
 }
 .productos{
@@ -95,37 +105,45 @@
     transition: transform .2s; /* Animation */
     }
     .productos:hover {
-    transform: scale(1.7);
+    transform: scale(1.2);
     }
 
-.boton{
-    width: 100px;
-    height: 30px;
-    border-radius: .5em;
-    background-color: red;
-    cursor: pointer;
-    transition:  background-color 1s ;
-}
-.boton:hover{
-    background-color: grey;
-}
 
-/* catalogo */
-.grid-main{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: repeat(4, 15rem);
-    gap: 1rem;
+/* contacto */
+h2{
+    text-align: center;
 }
-.comprar-precio{
-    justify-self: center;
+form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+
 }
-@media(max-width:768px){
-    .grid-main{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 15rem);
-        gap: 1rem;
-
-
-    }
+.input-name{
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    
 }
