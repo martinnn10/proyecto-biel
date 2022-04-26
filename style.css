@@ -125,7 +125,7 @@ form{
 .input-name{
     position: relative;
     z-index: 2;
-    float:inline;
+    float: inline;
     width: 100%;
     margin-bottom: 0;
 }
