@@ -57,6 +57,7 @@ h1{
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 .i-footer{
@@ -124,7 +125,7 @@ form{
 .input-name{
     position: relative;
     z-index: 2;
-    float: left;
+    float:inline;
     width: 100%;
     margin-bottom: 0;
 }
@@ -136,8 +137,6 @@ form{
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
-    background-color: #fff;
-    background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -168,3 +167,27 @@ input, textarea{
         margin-bottom: 0;
 
 }
+
+/* sobre nosotros */
+.sobre-nosotros-div{
+    margin: 30px;
+}
+.h2-sobre-nosotros{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    
+}
+.p-sobre-nosotros{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+article{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    margin: 10px;
+    justify-content: center;
+}
+
+
