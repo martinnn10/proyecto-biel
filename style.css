@@ -23,8 +23,34 @@ h1{
     background-image: url(./galeria/fondo-home-section.jpg);
 }
 
+/* para quien compras? */
+.grid_fotos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    justify-content: center;
+  
+}
+.foto_titulo{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
 
+    
+}
+.titulo_foto{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
 
+   
+}
+.index_foto--inicio{
+    height: 300px;
+    
+}
 
 
 
@@ -99,7 +125,7 @@ h1{
 .productos{
     width: 280px;
     height: 280px;
-    padding: 20px;
+    margin: 30px;
   
 }
 .productos{
@@ -108,7 +134,8 @@ h1{
     transition: transform .2s; /* Animation */
     }
     .productos:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    border: solid #000;
     }
 
 
@@ -170,7 +197,7 @@ input, textarea{
 
 /* sobre nosotros */
 .sobre-nosotros-div{
-    margin: 30px;
+    margin: 40px;
 }
 .h2-sobre-nosotros{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
