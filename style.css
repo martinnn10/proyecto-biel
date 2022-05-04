@@ -3,12 +3,6 @@
 .logo{
     height: 80px;
 }
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: beige;
-    text-align: center;
-    margin: 5px;
-}  
 
 /* section */
 .section__inicio{
@@ -25,22 +19,23 @@ h1{
 
 /* para quien compras? */
 .grid_fotos{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .para-quien-compras{
     padding: 10px;
     margin: 10px;
 }
-.titulo_foto{
+.grid_fotos div{
     position: relative;
     display: inline-block;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
     cursor: pointer;
 
 }
-.foto_titulo{
+.grid_fotos div strong{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,17 +44,68 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }   
-.index_foto--inicio{
+.grid_fotos div img{
     height: 300px;
     
 }
+/* catalogo */
+
+.grid{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+}
+.parte-productos{
+    height: 200px;
+}
+.sub-pruductos{
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px black;
+    text-align: center;
+    margin: 5px;
+    transition: transform .2s; /* Animation */
+    }
+    .sub-pruductos:hover {
+    transform: scale(0.9);
+    border: solid #000;
+    }
+    @media screen and (max-width:990px){
+        .grid{
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            text-align: center;
+            }
+    }
 @media screen and (max-width:800px){
-    .grid_fotos{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+    .grid{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
     }
 }
+    
 
+
+
+/* navegacion */
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.header__menu{
+    list-style: none;
+    text-align: center;
+    
+}
+.header__menu li a{
+    text-decoration: none;
+    color: #000;
+}
 
 
 
@@ -67,10 +113,10 @@ h1{
 /* footer */
 .pie-pagina{
     width: 100%;
+  
     background-color: #0a141d;
 }
 .grupo-1{
-    width: 100%;
     max-width: 1200px;
     margin: auto;
     display:grid;
@@ -82,7 +128,6 @@ h1{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -93,16 +138,16 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-.i-footer{
+.box i{
     color:#fff;
 }
-.footer-a{
+.box a{
     list-style: none;
     color: #fff;
     text-decoration: none;
 
 }
-.footer-a :hover{
+.box a:hover{
     color: aqua;
 }
 
@@ -124,26 +169,12 @@ h1{
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+        
+    }
+    .grupo-2{
+        background-color: red;
     }
 }
-
-/*catalogo */
-
-.productos{
-    width: 280px;
-    height: 280px;
-    margin: 30px;
-  
-}
-.productos{
-    position: relative;
-    left: 20px;
-    transition: transform .2s; /* Animation */
-    }
-    .productos:hover {
-    transform: scale(1.1);
-    border: solid #000;
-    }
 
 
 /* contacto */
@@ -206,7 +237,7 @@ input, textarea{
 .sobre-nosotros-div{
     margin: 40px;
 }
-.h2-sobre-nosotros{
+.h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     

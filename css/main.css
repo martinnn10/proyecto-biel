@@ -1,0 +1,84 @@
+.logo {
+  height: 80px; }
+
+.section__inicio {
+  padding: 110px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./galeria/fondo-home-section.jpg); }
+
+.para-quien-compras {
+  padding: 10px;
+  margin: 10px; }
+
+.grid_fotos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .grid_fotos .div {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer; }
+    .grid_fotos .div .strong {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+      .grid_fotos .div .strong .img {
+        height: 300px; }
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .pie-pagina .grupo-1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie-pagina .grupo-1 .box figure .box h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+        .pie-pagina .grupo-1 .box figure .box h2 .box i {
+          color: #fff; }
+          .pie-pagina .grupo-1 .box figure .box h2 .box i .box a {
+            list-style: none;
+            color: #fff;
+            text-decoration: none; }
+            .pie-pagina .grupo-1 .box figure .box h2 .box i .box a:hover {
+              color: aqua; }
+              .pie-pagina .grupo-1 .box figure .box h2 .box i .box a:hover .grupo-2 {
+                background-color: #0a1a2a;
+                padding: 15px 10px;
+                text-align: center;
+                color: #fff; }
+                .pie-pagina .grupo-1 .box figure .box h2 .box i .box a:hover .grupo-2 .grupo-2 small {
+                  font-size: 15px; }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; }
+  .grupo-2 {
+    background-color: red; } }

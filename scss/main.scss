@@ -1,3 +1,10 @@
 @import "./bases/variables";
-@import "./componentes/contacto";
-@import "./componentes/header";
+// componentes
+@import "./componentes/logo.scss";
+@import "./componentes/sectionIndex.scss";
+@import "./componentes/contacto.scss";
+@import "./componentes/footer.scss";
+
+// medias squery
+
+@import "./componentes/mediasSquery/mediasSquery"

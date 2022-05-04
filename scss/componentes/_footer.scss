@@ -1,0 +1,46 @@
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+    .box figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .box h2{
+                color: #fff;
+                margin-bottom: 25px;
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                .box i{
+                    color:#fff;
+                    .box a{
+                        list-style: none;
+                        color: #fff;
+                        text-decoration: none;
+                        &:hover{
+                            color: aqua;
+                            .grupo-2{
+                                background-color: #0a1a2a;
+                                padding: 15px 10px;
+                                text-align: center;
+                                color: #fff;
+                                .grupo-2 small{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
