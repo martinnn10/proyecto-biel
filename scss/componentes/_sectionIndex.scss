@@ -7,7 +7,7 @@
     font-size: 25px;
     background-repeat: no-repeat;
     background-size: cover ;
-    background-image: url(./galeria/fondo-home-section.jpg);
+    background-image: url(../galeria/fondo-home-section.jpg);
 }
 .para-quien-compras{
     padding: 10px;
@@ -15,24 +15,26 @@
 }
 .grid_fotos{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
     flex-wrap: wrap;
-    .div{
+    .grid_fotos div{
         position: relative;
         display: inline-block;
         text-align: center;
-        padding: 20px;
+        padding-bottom: 20px;
         cursor: pointer;
-        .strong{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            .img{
-                height: 300px;  
-            }
-        }   
     }
+}
+.grid_fotos div strong{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}   
+.grid_fotos div img{
+    height: 300px;
+    
 }

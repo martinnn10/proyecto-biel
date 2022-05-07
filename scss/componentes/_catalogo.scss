@@ -1,0 +1,34 @@
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .header__menu{
+        list-style: none;
+        text-align: center;
+    }
+}
+.header__menu li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.grid{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    .sub-pruductos{
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px black;
+        text-align: center;
+        margin: 5px;
+        transition: transform .2s; /* Animation */
+        }
+        .sub-pruductos:hover {
+        transform: scale(0.9);
+        border: solid #000;
+        }
+}
+.parte-productos{
+    height: 200px;
+}

@@ -1,3 +1,4 @@
+/* media de footer */
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 90%;
@@ -10,3 +11,21 @@
         background-color: red;
     }
 }
+/* catalogo */
+@media screen and (max-width:990px){
+    .grid{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        }
+}
+@media screen and (max-width:800px){ 
+    .grid{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    }
+}
+  
