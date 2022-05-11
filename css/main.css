@@ -12,6 +12,11 @@
   background-size: cover;
   background-image: url(../galeria/fondo-home-section.jpg); }
 
+.comprar {
+  text-decoration: none;
+  color: black;
+  font-size: 50px; }
+
 .para-quien-compras {
   padding: 10px;
   margin: 10px; }
