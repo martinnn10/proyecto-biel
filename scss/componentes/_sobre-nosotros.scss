@@ -2,12 +2,12 @@
     margin: 40px;
 }
 .h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-family: $tipografia-general;
+    font-size: map-get($tamaño-tipografia , parrafos );
     
 }
 .p-sobre-nosotros{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:$tipografia-general;
 
 }
 article{

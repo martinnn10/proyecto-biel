@@ -3,16 +3,17 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
+    color: $color-texto;
+    font-size: map-get($tamaño-tipografia, subtitulos);
     background-repeat: no-repeat;
     background-size: cover ;
     background-image: url(../galeria/fondo-home-section.jpg);
 }
 .comprar{
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size:50px;
+    font-family: $tipografia-general;
+    color: $color-texto;
+    font-size:map-get($tamaño-tipografia , titulos);
 }
 .para-quien-compras{
     padding: 10px;
@@ -23,6 +24,7 @@
     justify-content: space-evenly;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    
     .grid_fotos div{
         position: relative;
         display: inline-block;
@@ -37,7 +39,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: $tipografia-general;
 }   
 .grid_fotos div img{
     height: 300px;

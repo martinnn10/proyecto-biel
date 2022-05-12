@@ -1,17 +1,15 @@
 .h1-quienes-somos{
-    font-size: 30px;
+    font-size: map-get($tamaño-tipografia , titulos );
     font-weight: 500;
     padding-bottom: 25px;
-    font-family: Roboto,sans-serif;
-    color: #000;
+    font-family: $tipografia-general;
+    color: $color-texto;
     margin: 20px;
 }
-.p-texto{
-    font-size: 16px;
+.texto{
+    font-size: map-get($tamaño-tipografia , parrafos );
     font-weight: 400;
-    font-family: Roboto,sans-serif;
-    color: #121212;
+    font-family: $tipografia-general;
+    color: $color-texto;
     line-height: 21px;
-    margin-bottom: 0;
-
 }

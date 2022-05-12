@@ -16,19 +16,19 @@
 }
 
 .box h2{
-    color: #fff;
+    color: $color-footer;
     margin-bottom: 25px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 .box i{
-    color:#fff;
+    color:$color-footer;
 }
 
 .box a{
     list-style: none;
-    color: #fff;
+    color: $color-footer;
     text-decoration: none;
     .box a:hover{
         color: aqua;
@@ -39,7 +39,7 @@
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
-    color: #fff;
+    color: $color-footer;
     .grupo-2 small{
         font-size: 15px;
     }

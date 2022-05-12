@@ -1,12 +1,28 @@
-/* color back */
+
 $color-principal:red;
-
-
-
-/* color texto */
-$color-texto:#000;
+$color-texto: #000;
+$color-footer: #fff;
 
 
 /* tipografias */
-$tipografia-general: arial, verdana, sans-serif;
+$tipografia-general: Roboto,sans-serif;
 $tipografia-alternativa: 'Times New Roman', Times, serif;
+
+
+/* MAPS */
+$tamaño-tipografia:(
+    titulos:24px,
+    subtitulos:20px,
+    parrafos:16px,
+    letra-chica:12px,
+);
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin texto($text){
+    text-align: $text;
+}
