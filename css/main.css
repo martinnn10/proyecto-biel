@@ -180,6 +180,7 @@ form {
   font-family: Roboto, sans-serif; }
 
 article {
+  margin: 20px;
   display: flex;
   justify-content: center; }
 
